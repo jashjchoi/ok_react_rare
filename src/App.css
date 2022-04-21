@@ -6,12 +6,8 @@
 }
 
 .home,
-.services,
-.products,
-.contact-us,
-.sign-up,
-.marketing,
-.consulting {
+.about,
+.contact-us {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -20,7 +16,6 @@
 }
 
 /* .home {
-  background-image: url('./images/img-1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,8 +24,7 @@
 } */
 
 
-.products {
-  background-image: url('./images/img-3.jpg');
+.about {
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -39,7 +33,6 @@
 }
 
 .contact-us {
-  background-image: url('./images/img-4.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,7 +41,6 @@
 }
 
 .sign-up {
-  background-image: url('./images/img-7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
