@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
 
-export default function Products() {
-  return <h1 className='products'>About</h1>;
+export default function About() {
+  return <h1 className='about'>About</h1>;
 }

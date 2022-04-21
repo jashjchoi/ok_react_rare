@@ -48,46 +48,55 @@
   margin:0;
   border-bottom: 1px solid #277faf63;
 } */
-/* .User .logo {
+/* .navbar-logo {
   align-items: center;
   justify-content: space-around;
   display: border-box;
-}
+} */
 
-.User .logo img {
-  width: 75px;
-  display: inline-block;
+.navbar-logo img {
+  width: 50px;
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
   border-radius: 50%;
   border: 2px solid #44ACB5;
+  
 }
 
-.User .info p {
+/* .info p {
   display: inline-flex;
   font-size: 0.9rem;
   font-weight: normal;
   text-align: right;
-}
+} */
 
-.User .info a {
+/* .info a {
   font-size: 0.8rem;
   text-decoration: none;
   margin-top: 0.2rem;
   display: flex;
   justify-content: flex-end;
   color: #E87F3C;
-}
+} */
 
-.User .info h3{
+h3{
   color: #44ACB5;
   display: inline-flex;
-
+  text-decoration: none;
   font-family: 'Noto Sans', sans-serif;
+  margin: 2rem;
+  font-size: 1.5rem;
+
 }
 
-.User .info span {
+.cursive {
+  margin: 5px;
+  font-size: 1.4rem;
+  display: inline-flex;
   font-family: 'Handlee', cursive;
-  color: #191F3C !important;
-} */
+  color: #F68712 !important; 
+}
 /* --------------- Modal (pop up windows)--------------------*/
 .Modal {
   position: fixed;
@@ -266,7 +275,7 @@
   justify-content: center;
 }
 .AddNewTodo .todobtn button {
-  width: 40%;
+  width: 30%;
   height: 70%;
   border: none;
   border-radius: 3px;
@@ -299,7 +308,7 @@
 }
 .AddNewTodo form .text input:focus {
   outline: none;
-  border-bottom: 1px solid #0080ff;
+  border-bottom: 1px solid #44ACB5;
 }
 .AddNewTodo form .remind {
   display: flex;
@@ -329,14 +338,14 @@
   padding: 1rem 1rem 0 1rem;
 }
 .AddNewTodo form .pick-project .projects .project {
-  border: 1px solid #0080ff;
+  border: 1px solid #44ACB5;
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
   cursor: pointer;
 }
 .AddNewTodo form .pick-project .projects .active {
-  background: #0080ff;
+  background: #44ACB5;
   color: white;
 }
 .AddNewTodo form .cancel {
@@ -354,7 +363,7 @@
 .AddNewTodo form .confirm button {
   width: 100%;
   height: 40px;
-  background: #0080ff;
+  background: #44ACB5;
   color: white;
   font-size: 1.1rem;
   border: none;
@@ -599,4 +608,20 @@
   margin: 5px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+
+.footer{
+  background-color: #242222;
+  width: 100%;
+  height: auto;
+  padding: 3rem;
+}
+.footer-nav h2{
+  display: inline-flex;
+  margin: auto;
+  align-items: right;
+}
+a:visited{
+  text-decoration: none;
 }

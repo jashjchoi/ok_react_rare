@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
       <Menu>
-        <AddNewTodo />
         <Calendar />
         <Projects />
+        <AddNewTodo />
       </Menu>
       <Main>
         <Todos />
