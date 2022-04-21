@@ -1,0 +1,602 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&family=Roboto:wght@300&display=swap');
+
+/* Default Margin & Padding */
+
+/* *, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+} */
+
+/* --------------- APP ---------------------*/
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.menu {
+  min-width: 480px;
+  min-width: 210px;
+  height: 100%;
+  align-content: center;
+  margin: auto;
+  background-color: #edeffa;
+}
+
+/* --------------- Main Section ---------------------*/
+.Main {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url("../images/grey_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* User */
+/* .User {
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  min-height: 125px;
+  margin:0;
+  border-bottom: 1px solid #277faf63;
+} */
+/* .User .logo {
+  align-items: center;
+  justify-content: space-around;
+  display: border-box;
+}
+
+.User .logo img {
+  width: 75px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #44ACB5;
+}
+
+.User .info p {
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-align: right;
+}
+
+.User .info a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #E87F3C;
+}
+
+.User .info h3{
+  color: #44ACB5;
+  display: inline-flex;
+
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.User .info span {
+  font-family: 'Handlee', cursive;
+  color: #191F3C !important;
+} */
+/* --------------- Modal (pop up windows)--------------------*/
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5 !important;
+
+}
+.Modal .container {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  z-index: 5 !important;
+}
+
+
+/* --------------- Tags Section ---------------------*/
+.Projects {
+  width: 50%;
+  padding: 1rem;
+  display: inline-block;
+  border-bottom: 1px solid #277faf63;
+}
+.Projects .header {
+  display: flex;
+  align-items: center;
+}
+.Projects .header .title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.Projects .header .title p {
+  margin-left: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.Projects .header .btns {
+  display: flex;
+  align-items: center;
+}
+.Projects .header .btns span.edit {
+  margin-right: 5px;
+}
+.Projects .header .btns span {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Projects .header .btns span:hover {
+  background-color: #ebebeb;
+  transition: all 300ms ease-in-out;
+}
+.Projects .items {
+  padding: 0.5rem;
+}
+/* --------------- Tag css (icons and effects) ---------------------*/
+.Project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  margin: 5px;
+  font-size: 1rem;
+}
+.Project .name {
+  cursor: pointer;
+  word-break: break-all;
+}
+.Project .btns {
+  display: flex;
+  align-items: center;
+}
+.Project .btns .total-todos {
+  position: absolute;
+  right: 0;
+  background: #e2e3eb;
+  width: 25px;
+  height: 25px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+.Project .btns .edit-delete {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.Project .btns .edit-delete span {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 300ms ease-in-out;
+}
+.Project .btns .edit-delete span.edit:hover {
+  background: #A8DFEB;
+}
+.Project .btns .edit-delete span.delete:hover {
+  background: #EF8282;
+}
+
+/* --------------- Add New Tags & Tag form ---------------------*/
+.AddNewProject .add-button span {
+  margin-right: 5px;
+}
+.ProjectForm {
+  background-color: #edeffa;
+  padding: 1rem;
+  border-radius: 4px;
+  position: relative;
+  padding-bottom: 40px;
+  width: 360px;
+}
+.ProjectForm input {
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  font-size: 1rem;
+  color:  #191F3C;
+}
+.ProjectForm input:focus {
+  outline: none;
+  border-bottom: 1px solid #277faf63;
+}
+.ProjectForm button {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 50%;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 300ms ease-in-out;
+}
+.ProjectForm button.cancel {
+  right: 0;
+  background-color: #777777;
+}
+.ProjectForm button.confirm {
+  left: 0;
+  background-color: #44ACB5;
+}
+.ProjectForm button:hover {
+  filter: brightness(1.1);
+}
+
+/* --------------- Add new Todo ---------------------*/
+
+/* AddNewTodo */
+.AddNewTodo {
+  border-bottom: 1px solid #277faf63;
+}
+.AddNewTodo .todobtn {
+  display: flex;
+  padding: 1rem;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.AddNewTodo .todobtn button {
+  width: 40%;
+  height: 70%;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #44ACB5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  justify-content: center;
+
+}
+.AddNewTodo .btn button:hover {
+  filter: brightness(1.1);
+  transition: all 300ms ease;
+}
+/* AddNewTodo form */
+.AddNewTodo form {
+  padding: 1rem 1rem calc(1rem + 40px) 1rem;
+  width: 500px;
+  background: white;
+  border-radius: 4px;
+}
+.AddNewTodo form .text input {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.AddNewTodo form .text input:focus {
+  outline: none;
+  border-bottom: 1px solid #0080ff;
+}
+.AddNewTodo form .remind {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.AddNewTodo form p {
+  margin-left: 10px;
+}
+.AddNewTodo form .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.AddNewTodo form .pick-day {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.AddNewTodo form .pick-time {
+  padding: 1.5rem;
+}
+.AddNewTodo form .pick-project {
+  padding: 0.5rem;
+}
+.AddNewTodo form .pick-project .projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem 0 1rem;
+}
+.AddNewTodo form .pick-project .projects .project {
+  border: 1px solid #0080ff;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.AddNewTodo form .pick-project .projects .active {
+  background: #0080ff;
+  color: white;
+}
+.AddNewTodo form .cancel {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.AddNewTodo form .confirm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.AddNewTodo form .confirm button {
+  width: 100%;
+  height: 40px;
+  background: #0080ff;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+}
+.TodoForm {
+  padding: 1rem 2rem calc(3rem + 50px) 1rem;
+  width: 100%;
+  background: #edeffa;
+  border-radius: 4px;
+}
+
+.TodoForm h3 {
+  margin:auto;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.TodoForm .text input {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #edeffa;
+}
+.TodoForm .text input:focus {
+  outline: none;
+  border-bottom: 1px solid #44ACB5;
+}
+.TodoForm .remind {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.TodoForm p {
+  margin-left: 10px;
+}
+.TodoForm .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  
+}
+.TodoForm .pick-day {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.TodoForm .pick-time {
+  padding: 1.5rem;
+}
+.TodoForm .pick-project {
+  padding: 0.5rem;
+}
+.TodoForm .pick-project .projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1rem 0 1rem;
+}
+.TodoForm .pick-project .projects .project {
+  border: 1px solid #44ACB5;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.TodoForm .pick-project .projects .active {
+  background: #44ACB5;
+  color: white;
+}
+.TodoForm .cancel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.TodoForm .confirm {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.TodoForm .confirm button {
+  width: 100%;
+  height: 40px;
+  background: #44ACB5;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+}
+
+
+/* --------------- Todo Attr. ---------------------*/
+.Todo {
+  padding: 1rem;
+}
+.Todo .todo-container {
+  display: flex;
+  align-items: center;
+}
+.Todo .todo-container span {
+  cursor: pointer;
+  margin: auto;
+}
+.Todo .todo-container .editicon {
+  margin-right: 8px;
+}
+.Todo .todo-container .text {
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.Todo .todo-container .text span {
+  font-size: 0.8rem;
+  color: #2b2f4ecc;
+}
+.Todo .todo-container .text .line {
+  height: 1px;
+  background: #EDEFFA;
+  position: absolute;
+  top: 25%;
+  width: 0;
+  transition: width 250ms ease-in-out;
+}
+.Todo .todo-container .text .line-through {
+  width: 100%;
+}
+.Todo .todo-container .add-to-next-day {
+  margin-right: 10px;
+}
+
+
+/* --------------- List of Todos ---------------------*/
+.Todos {
+  vertical-align: top;
+  width: 400px;
+  height: 70%;
+  background-color: #EDEFFA;
+  margin: 2.5rem;
+  border-radius: 4px;
+  opacity: 0.9;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  display: inline-block;
+  align-content: top;
+}
+.Todos .selected-project {
+  margin: 1rem;
+  padding: 1rem 2rem 2rem 1rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #277faf69;
+  color: #2780AF;
+
+}
+.Todos .todos {
+  overflow-y: auto;
+}
+.Todos p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------Upcoming---------------------*/
+.Next7Days .day {
+  margin: .1rem 1.5rem;
+  display: flex;
+}
+.Next7Days .day .name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.Next7Days .day .total-todos {
+  margin-left: 10px;
+}
+
+/* --------------- Edit Todo Window ---------------------*/
+
+.EditTodo {
+  vertical-align: top;
+  width: 400px;
+  height: 70%;
+  background-color: #edeffa;
+  margin: 2.5rem;
+  border-radius: 4px;
+  opacity: 0.9;
+  padding: 0.5rem;
+  display: inline-block;
+}
+.EditTodo .header {
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2780AF;
+  color: #2780AF;
+}
+
+/* --------------- My Schedule section ---------------------*/
+.Calendar {
+  padding: 1rem;
+  width: 50%;
+  display: inline-block;
+  border-bottom: 1px solid #277faf63;
+}
+.Calendar .header {
+  display: flex;
+  align-items: center;
+}
+.Calendar .header .title {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.Calendar .header .title p {
+  margin-left: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.Calendar .header .btns span {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Calendar .header .btns span:hover {
+  background-color: #ebebeb;
+  transition: all 300ms ease-in-out;
+}
+.Calendar .items {
+  padding: 0.5rem;
+}
+.Calendar .items .item {
+  padding: 0.25rem;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
