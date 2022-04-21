@@ -5,13 +5,15 @@
 
 /* Default Margin & Padding */
 
-/* *, ::after, ::before {
+*, ::after, ::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-} */
+}
 
+#root {
+  width: 100vw;
+}
 /* --------------- APP ---------------------*/
 .App {
   display: flex;
