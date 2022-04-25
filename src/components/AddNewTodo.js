@@ -6,6 +6,8 @@ import { calendarItems } from '../constants'
 import firebase from '../firebase'
 import moment from 'moment'
 import randomcolor from 'randomcolor'
+import { Button } from 'react-bootstrap'
+
 
 function AddNewTodo(){
     const { projects, selectedProject } = useContext(TodoContext)
@@ -49,11 +51,11 @@ function AddNewTodo(){
 
     return (
         <div className='AddNewTodo'>
-            <div className="todobtn">
-                <button onClick={() => setShowModal(true)}>
-                    Add a New Task
-                </button>
-            </div>
+         <div className="todobtn">
+            <Button variant="secondary" onClick={() => setShowModal(true)}>
+                Add a New Task
+            </Button>
+         </div>
             <Modal showModal={showModal} setShowModal={setShowModal}>
                 <TodoForm handleSubmit={handleSubmit} heading='Add a New Task'
                     text={text}

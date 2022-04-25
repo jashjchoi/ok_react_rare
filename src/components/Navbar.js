@@ -1,60 +1,77 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
+import { Button, Navbar, Nav, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './assets/css/Navbar.css';
-import logo from "./assets/images/oklogo.png"
+import logo from './assets/images/oklogo.png'
 
-function Navbar() {
-  const [click, setClick] = useState(false);
+function Navbarcontainer() {
+  // const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
+  // const handleClick = () => setClick(!click);
+  // const closeMobileMenu = () => setClick(false);
 
   return (
+    // <>
+    //   <nav className='navbar'>
+    //     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+    //     <img src={logo} alt="logo" /> 
+    //     </Link>
+    //     <h3>Oklahoma <span className="cursive">Rare</span> </h3>
+    //     <div className='menu-icon' onClick={handleClick}>
+    //       <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+    //     </div>
+    //     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+    //       <li className='nav-item'>
+    //         <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+    //           Dashboard
+    //         </Link>
+    //       </li>
+    //       <li className='nav-item'>
+    //         <Link
+    //           to='/about'
+    //           className='nav-links'
+    //           onClick={closeMobileMenu}
+    //         >
+    //           About
+    //         </Link>
+    //       </li>
+    //       <li className='nav-item'>
+    //         <Link to='/contact-us' className='nav-links'
+    //           onClick={closeMobileMenu}>
+    //           Contact Us
+    //         </Link>
+    //       </li>
+    //       <li>
+    //         <Link to='/login' className='nav-links-mobile'
+    //           onClick={closeMobileMenu}>
+    //           Login
+    //         </Link>
+    //       </li>
+    //     </ul>
+    //     {/* <div className="login">
+    //      <Button />
+    //     </div> */}
+    //   </nav>
+    // </>
     <>
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-        <img src={logo} alt="logo" /> 
-        </Link>
-        <h3>Oklahoma <span className="cursive">Rare</span> </h3>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              Dashboard
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link
-              to='/about'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='/contact-us' className='nav-links'
-              onClick={closeMobileMenu}>
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link to='/login' className='nav-links-mobile'
-              onClick={closeMobileMenu}>
-              Login
-            </Link>
-          </li>
-        </ul>
-        {/* <div className="login">
-         <Button />
-        </div> */}
-      </nav>
+    <Navbar className="navbar-custom" collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="/"> 
+        <img className="logo" src= {logo} width= "50" height="50" alt=""/> 
+        <span className="navbarbrand">Oklahoma</span> <span className="cursive">Rare</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto py-3">
+                <Nav.Link href="/">Dashboard</Nav.Link>
+                <Nav.Link href="/about"> About </Nav.Link>
+                <Nav.Link href="/contact">Contact Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </>
   );
 }
 
-export default Navbar;
+export default Navbarcontainer;
