@@ -1,5 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+import 'firebase/auth'
 
 //Config data for the Firebase. Delete later
 const firebaseConfig = {
