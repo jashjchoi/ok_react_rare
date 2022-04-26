@@ -3,8 +3,8 @@ import Main from './Main'
 
 function AboutInfo(){
     return (
+        <div className="Main">
         <div className='About'>
-            <div className="Main">
                     <p>Contact</p>
                     <p>Connect with us on social media. Learn more about Oklahoma Rare, our founders, and events we are attending.</p>
 
