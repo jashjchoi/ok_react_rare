@@ -6,7 +6,7 @@ function AboutInfo(){
         <div className="Main">
         <div className='About'>
             
-                    <p>About</p>
+                    <h1><p>About</p></h1>
                     <p>A collaborative community started by two parents
                         with children diagnosed with rare diseases. The goal is to share
                         resources and connect those diagnosed with and families and caregivers
@@ -16,7 +16,8 @@ function AboutInfo(){
                 You can find more about the events we attend, or recommend on our Facebook
                 page. </p>
 
-                <p>Jade Day </p>
+                <h2><p>Jade Day </p></h2>
+                <hr></hr>
                 <p>Jade Day is the Vice President of A Twist of Fate-ATS; a nonprofit
                     serving patients and families with arterial tortuosity syndrome. 
                     She also serves on the board of Remember The Girls; a nonprofit 
@@ -38,7 +39,8 @@ function AboutInfo(){
                     advocating for disability rights; with over 14 years experience with undiagnosed 
                     and rare disorders. Her heart is in service of others, particularly marginalized 
                     populations.</p>
-                <p>Sky Collins</p>
+                <h2><p>Sky Collins</p></h2>
+                <hr></hr>
                 <p>Sky Collins has a passion for advocating and working to remove equity barriers in 
                     education and healthcare within our community with deep ties to the Oklahoma City community. 
                     She believes that service to others is the most powerful way that we live intentionally. She has 
