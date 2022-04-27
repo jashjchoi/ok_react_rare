@@ -623,6 +623,18 @@ h3{
   cursor: pointer;
 }
 
+.About {
+    vertical-align: top;
+    height: 70%;
+    background-color: #EDEFFA;
+    margin: 2.5rem;
+    border-radius: 4px;
+    opacity: 0.9;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    display: inline-block;
+    align-content: top;
+    font-weight: normal;
+  }
 
 Footer{
   background-color: #242222;

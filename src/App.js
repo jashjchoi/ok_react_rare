@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './components/pages/About';
 import ContactUs from './components/pages/ContactUs';
 import Login from './components/pages/Login';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import Footer from './components/Footer.jsx'
 function App() {
   return (
