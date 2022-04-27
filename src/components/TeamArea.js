@@ -51,7 +51,7 @@ const TeamArea = () => {
               </div>
               <div className="team__title">
                 <h2 className="team__title-title">
-                  <a className="p-0">Jessica Brown</a>
+                  <a className="p-0">Jade Day</a>
                 </h2>
                 <span className="team__title-meta">Founder</span>
               </div>
