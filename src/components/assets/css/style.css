@@ -1121,6 +1121,19 @@ a:visited{
     outline: none;
 }
 
+.logoutbtn {
+  margin: auto;
+  padding: auto;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #44ACB5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: right;
+  align-content: right;
+}
+
 /*===================================
     RESPONSIVE DESIGN
 =====================================*/

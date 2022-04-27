@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { Button, Navbar, Nav, Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './assets/css/Navbar.css';
 import logo from './assets/images/oklogo.png'
 import { auth } from '../firebase';
+import {useAuthState} from 'react-firebase-hooks/auth';
 
 
-const logout = () => {
-	auth.signOut();
-}
+// const logout = () => {
+// 	auth.signOut();
+// }
 
 
 function Navbarcontainer() {
@@ -16,6 +17,25 @@ function Navbarcontainer() {
 
   // const handleClick = () => setClick(!click);
   // const closeMobileMenu = () => setClick(false);
+  const [user] = useAuthState(auth);
+  const history = useHistory()
+
+  const handleLogoutClick = () => {
+      auth.signOut();
+      history.push('/')
+  }
+
+  const authButton = () => {
+      if (user === null) {
+          return (
+                  <Button className="logoutbtn" as={Link} to="/">Login</Button>
+
+          )
+              
+      } else {
+          return <Button className="logoutbtn" onClick={handleLogoutClick}>Logout</Button>
+      }
+  }
 
   return (
     // <>
@@ -73,10 +93,9 @@ function Navbarcontainer() {
                 <Nav.Link href="/">Dashboard</Nav.Link>
                 <Nav.Link href="/about"> About </Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/login">Login</Nav.Link>
-                <Button onClick={logout} variant="secondary" >Logout</Button>
-
+                {/* <Nav.Link href="/login">Login</Nav.Link> */}
             </Nav>
+            <div> {authButton()} </div>
           </Navbar.Collapse>
       </Container>
     </Navbar>
