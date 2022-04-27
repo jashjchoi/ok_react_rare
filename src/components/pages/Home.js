@@ -9,10 +9,13 @@ import Projects from '../Projects'
 import Todos from '../Todos'
 import EditTodo from '../EditTodo'
 import Login from './Login'
+import { auth} from '../../firebase/index';
+import {useAuthState} from 'react-firebase-hooks/auth';
 
 
 export default function Home() {
-  return true ? ( 
+  const [user] = useAuthState(auth);
+  return ( user ?  
     <>
       <Menu>
         <Calendar />
@@ -23,6 +26,6 @@ export default function Home() {
         <Todos />
         <EditTodo />
       </Main>
-    </>
-  ) : <Login />
+      </>
+   : <Login/> )
 }
