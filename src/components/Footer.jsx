@@ -2,11 +2,6 @@ import React from 'react';
 // import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import {
   MDBFooter,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBCol,
-  MDBBtn
 } from 'mdb-react-ui-kit';
 
 // export default function Footer() {
