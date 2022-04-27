@@ -1,6 +1,9 @@
 import React from 'react';
 // import './assets/styles.css'
-// import firebase from '../../firebase/index';
+import firebase from '../../firebase/index';
+import { auth } from '../../firebase/index';
+// import {useAuthState} from 'react-firebase-hooks/auth';
+import Home from './Home';
 
 // const test = async () => {
 //     try {
@@ -24,6 +27,16 @@ import React from 'react';
 //     }
 // }
 
+const signInWithGoogle = () => 
+	auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+
+// const SignIn = () => {
+//     <>
+//     <div>
+//       <button onClick={signInWithGoogle} className="btn btn-dark btn-lg btn-block">Sign In with Google</button>
+//     </div>
+//   </>
+
 
 const Login = () => {
 	return (
@@ -40,5 +53,10 @@ const Login = () => {
 		</div>
 	);
 }
+
+// const Loginpage = () => {
+// 	const [user] = useAuthState(auth)
+// 	return user ? <Home /> : <Login />
+// }
 
 export default Login;

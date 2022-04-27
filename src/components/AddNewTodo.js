@@ -53,11 +53,11 @@ function AddNewTodo(){
         <div className='AddNewTodo'>
          <div className="todobtn">
             <Button variant="secondary" onClick={() => setShowModal(true)}>
-                Add a New Task
+            ADD A NEW TASK
             </Button>
          </div>
             <Modal showModal={showModal} setShowModal={setShowModal}>
-                <TodoForm handleSubmit={handleSubmit} heading='Add a New Task'
+                <TodoForm handleSubmit={handleSubmit} heading='ADD A NEW TASK'
                     text={text}
                     setText={setText}
                     day={day}

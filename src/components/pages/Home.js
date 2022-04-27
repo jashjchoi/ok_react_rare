@@ -8,9 +8,11 @@ import AddNewTodo from '../AddNewTodo'
 import Projects from '../Projects'
 import Todos from '../Todos'
 import EditTodo from '../EditTodo'
+import Login from './Login'
+
 
 export default function Home() {
-  return (
+  return true ? ( 
     <>
       <Menu>
         <Calendar />
@@ -22,5 +24,5 @@ export default function Home() {
         <EditTodo />
       </Main>
     </>
-  );
+  ) : <Login />
 }

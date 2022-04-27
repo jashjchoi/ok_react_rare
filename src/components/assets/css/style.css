@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap');
+
 
 /* Default Margin & Padding */
 
@@ -17,7 +20,9 @@
 
 }
 
-/* --------------- APP ---------------------*/
+/*===================================
+    APP
+=====================================*/
 .App {
   display: flex;
   width: 100vw;
@@ -35,7 +40,9 @@
   background-color: #edeffa;
 }
 
-/* --------------- Main Section ---------------------*/
+/*===================================
+    MAIN
+=====================================*/
 .Main {
   min-height: 50vh;
   background-image: url("../images/grey_bg.png");
@@ -59,7 +66,36 @@
   justify-content: space-around;
   display: border-box;
 } */
+/*===================================
+    ABOUT
+=====================================*/
 
+.about-area {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-area .about-large-img {
+  margin-bottom: 60px;
+}
+.about-area .about-large-img img,
+.about-area .about-semi-img img {
+  width: 100%;
+}
+.about-area .about-heading {
+  font-size: 1.1rem;
+}
+.about-area .about-heading .section-heading .section__desc {
+  line-height: 30px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*===================================
+    NAVBAR
+=====================================*/
 .navbarbrand {
   color: #44ACB5;
 }
@@ -106,7 +142,9 @@ h3{
   font-family: 'Handlee', cursive;
   color: #F68712 !important; 
 }
-/* --------------- Modal (pop up windows)--------------------*/
+/*===================================
+    Modal POPUP
+=====================================*/
 .Modal {
   position: fixed;
   top: 0;
@@ -127,7 +165,9 @@ h3{
 }
 
 
-/* --------------- Tags Section ---------------------*/
+/*===================================
+    TAGS (PROJECTS)
+=====================================*/
 .Projects {
   width: 50%;
   padding: 1rem;
@@ -172,7 +212,9 @@ h3{
 .Projects .items {
   padding: 0.5rem;
 }
-/* --------------- Tag css (icons and effects) ---------------------*/
+/*===================================
+    LIST OF TAGS
+=====================================*/
 .Project {
   position: relative;
   display: flex;
@@ -224,7 +266,9 @@ h3{
   background: #EF8282;
 }
 
-/* --------------- Add New Tags & Tag form ---------------------*/
+/*===================================
+    ADD A NEW TAG
+=====================================*/
 .AddNewProject .add-button span {
   margin-right: 5px;
 }
@@ -273,12 +317,10 @@ h3{
   filter: brightness(1.1);
 }
 
-/* --------------- Add new Todo ---------------------*/
+/*===================================
+    ADD NEW TODO TASKS
+=====================================*/
 
-/* AddNewTodo */
-/* .AddNewTodo {
-  border-bottom: 1px solid #277faf63;
-} */
 .AddNewTodo .todobtn {
   display: flex;
   padding: 1rem;
@@ -464,8 +506,9 @@ h3{
   cursor: pointer;
 }
 
-
-/* --------------- Todo Attr. ---------------------*/
+/*===================================
+    TODO TASK WINDOW
+=====================================*/
 .Todo {
   padding: 1rem;
 }
@@ -510,7 +553,9 @@ h3{
 }
 
 
-/* --------------- List of Todos ---------------------*/
+/*===================================
+    LIST OF TODOS
+=====================================*/
 .Todos {
   vertical-align: top;
   width: 400px;
@@ -554,7 +599,9 @@ h3{
   margin-left: 10px;
 }
 
-/* --------------- Edit Todo Window ---------------------*/
+/*===================================
+    EDIT TODO WINDOW
+=====================================*/
 
 .EditTodo {
   vertical-align: top;
@@ -578,7 +625,9 @@ h3{
   color: #2780AF;
 }
 
-/* --------------- My Schedule section ---------------------*/
+/*===================================
+    MY SCHEDULE
+=====================================*/
 .Calendar {
   padding: 1rem;
   width: 50%;
@@ -636,6 +685,10 @@ h3{
     font-weight: normal;
   }
 
+/*===================================
+    FOOTER
+=====================================*/
+
 Footer{
   background-color: #242222;
 }
@@ -666,7 +719,411 @@ a:visited{
   transition: all 300ms ease;
 }
 
-  /* Mobile Devices */
+/*===================================
+    ABOUT PAGE - TEAM
+=====================================*/
+.team-area {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.team-area .team-content-wrap {
+  margin-top: 50px;
+}
+.team-area .team-content-wrap .team-item {
+  margin-bottom: 30px;
+}
+
+.team-area .team-content-wrap .team-item:hover .team__img .team__img-links {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.team-area .team-content-wrap .team-item .team__img .team__img-links ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+.team-area .team-content-wrap .team-item .team__img .team__img-links ul li a {
+  display: block;
+  color: #fff;
+  margin: 0 10px;
+}
+.team-area .team-content-wrap .team-item .team__img .team__img-links ul li a:hover {
+  color: #f1ae44;
+}
+.team-area .team-content-wrap .team-item .team__title {
+  position: relative;
+  z-index: 1;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.team-area .team-content-wrap .team-item .team__title:before,
+.team-area .team-content-wrap .team-item .team__title:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 40px;
+  z-index: -1;
+  background-color: #50bac3;
+}
+.team-area .team-content-wrap .team-item .team__title:after {
+  right: 21px;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-12deg,0deg);
+  -moz-transform: skew(-12deg,0deg);
+  -ms-transform: skew(-12deg,0deg);
+  -o-transform: skew(-12deg,0deg);
+  transform: skew(-12deg,0deg);
+}
+
+.team-area .team-content-wrap .team-item .team__title .team__title-title {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+.team-area .team-content-wrap .team-item .team__title .team__title-title a {
+  color: #fff;
+}
+.team-area .team-content-wrap .team-item .team__title .team__title-meta {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.team-area .team-content-wrap .team-item2 .team__title:before,
+.team-area .team-content-wrap .team-item2 .team__title:after {
+  background-color: #F68712;
+}
+.team-area .team-content-wrap .team-item3 .team__title:before,
+.team-area .team-content-wrap .team-item3 .team__title:after {
+  background-color: #f1ae44;
+}
+.team-area .team-content-wrap .team-item4 .team__title:before,
+.team-area .team-content-wrap .team-item4 .team__title:after {
+  background-color: #863bae;
+}
+
+.team-area2 .team-content-wrap {
+  margin-top: 0;
+}
+
+.team-area .section__desc {
+  font-family: 'Roboto', sans-serif;
+}
+.team-area a {
+  font-family: 'Playfair Display', serif;
+
+}
+.team-area span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/*===================================
+    ABOUT PAGE
+=====================================*/
+.service-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+/*=== heart-icon ===*/
+.service-area .heart-icon {
+  position: absolute;
+  animation: heartbeat 0.7s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+}
+.service-area .heart-icon-1 {
+  top: 0;
+  left: 16%;
+}
+.service-area .heart-icon-2 {
+  top: 6%;
+  left: 0;
+}
+.service-area .heart-icon-3 {
+  top: 33%;
+  left: 9%;
+}
+.service-area .heart-icon-4 {
+  top: 37%;
+  left: 20%;
+}
+.service-area .heart-icon-5 {
+  top: 56%;
+  left: 10%;
+}
+.service-area .heart-icon-6 {
+  bottom: 17%;
+  left: 9%;
+}
+.service-area .heart-icon-7 {
+  top: -9%;
+  right: 7%;
+}
+.service-area .heart-icon-8 {
+  top: 14%;
+  right: 9%;
+}
+.service-area .heart-icon-9 {
+  top: 24%;
+  right: 20%;
+}
+.service-area .heart-icon-10 {
+  top: 50%;
+  right: 14%;
+}
+.service-area .heart-icon-11 {
+  bottom: 25%;
+  right: 3%;
+}
+
+.service-area .service-wrap {
+  margin-top: 52px;
+  margin-bottom: 50px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon {
+  display: inline-block;
+  padding: 12px 15px;
+  position: relative;
+  margin-bottom: 27px;
+  z-index: 1;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon i {
+  font-size: 65px;
+  line-height: 60px;
+  color: #424242;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon:before,
+.service-area .service-wrap .service-item .service-item-inner .service-icon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #e5f5f6;
+}
+
+.service-area .service-wrap .service-item .service-item-inner .service-content {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-content .service__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-content .service__desc {
+  line-height: 29px;
+}
+.service-area .button-shared .theme-btn,
+.service-area .button-shared .theme-btn:after {
+  background-color: #F68712;
+}
+.service-area .button-shared .theme-btn:hover,
+.service-area .button-shared .theme-btn:hover:after {
+  background-color: #f1ae44;
+}
+
+.button-shared .servicebtn{
+  margin: 2rem;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #44ACB5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.service-area .section__title {
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.service-area p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.button-shared .servicebtn:hover {
+  filter: brightness(1.1);
+  transition: all 300ms ease;
+}
+
+/*===================================
+    CONTACT US
+=====================================*/
+
+.contact-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.contact-area .section__desc {
+  line-height: 30px;
+  margin-top: 43px;
+  padding-right: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-area .section__list {
+  margin: 2rem 0rem;
+}
+.contact-area .section__list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.contact-area .section__list li a {
+  font-size: 15px;
+  background-color: #50bac3;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+}
+.contact-area .section__list li a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #50bac3;
+  border-radius: 50%;
+
+}
+.contact-area .section__list li:nth-child(2) a,
+.contact-area .section__list li:nth-child(2) a:after {
+  background-color: #F68712;
+}
+.contact-area .section__list li:nth-child(3) a,
+.contact-area .section__list li:nth-child(3) a:after {
+  background-color: #f1ae44;
+}
+
+
+.contact-area .contact-detail-action {
+  margin-top: 120px;
+}
+.contact-area .contact-detail-action .contact-item {
+  background-color: #50bac3;
+  padding: 52px 30px 50px 60px;
+  height: 270px;
+  position: relative;
+  z-index: 1;
+  margin-right: 57px;
+}
+.contact-area .contact-detail-action .contact-item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #50bac3;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-12deg,0deg);
+  -moz-transform: skew(-12deg,0deg);
+  -ms-transform: skew(-12deg,0deg);
+  -o-transform: skew(-12deg,0deg);
+  transform: skew(-12deg,0deg);
+}
+.contact-area .contact-detail-action .contact-item2,
+.contact-area .contact-detail-action .contact-item2:after {
+  background-color: #F68712;
+}
+.contact-area .contact-detail-action .contact-item3,
+.contact-area .contact-detail-action .contact-item3:after {
+  background-color: #f1ae44;
+}
+.contact-area .contact-detail-action .contact-item .contact__title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+.contact-area .contact-detail-action .contact-item .contact__desc {
+  color: #fff;
+  line-height: 30px;
+  font-weight: 500;
+}
+.contact-area .form-shared form .textarea {
+  height: 170px;
+}
+
+.newsletter-area .section-heading .section__meta {
+  color: #f1ae44;
+}
+.newsletter-area .newsletter-form {
+  margin-top: 51px;
+}
+.newsletter-area .newsletter-form .col-lg-9 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.newsletter-area .newsletter-form .form-shared form .form-group {
+  margin-bottom: 0;
+}
+.newsletter-area .newsletter-form .form-shared form .form-group .form-control {
+  color: #343434;
+  background-color: #ffffff;
+}
+.newsletter-area .newsletter-form .form-shared form .submit__btn,
+.newsletter-area .newsletter-form .form-shared form .submit__btn:after {
+  margin-top: 0;
+  background-color: #F68712;
+}
+.newsletter-area .newsletter-form .form-shared form .submit__btn:hover,
+.newsletter-area .newsletter-form .form-shared form .submit__btn:hover:after {
+  background-color: #f1ae44;
+}
+
+.form-shared form .form-control,
+.form-shared form .textarea,
+.form-shared form .select-option {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #f2f0ec;
+    color: #818181;
+    padding: 19px 30px;
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+}
+
+/*===================================
+    RESPONSIVE DESIGN
+=====================================*/
 
 @media (max-width:480px){
   .Todos {
@@ -698,8 +1155,15 @@ a:visited{
     justify-content: center !important;
     margin: auto;
   }
-} 
-
+  .team-area .team-content-wrap .team-item .team__img img {
+    width: 50% !important;
+  }
+  .team-area .team-content-wrap .team-item .team__title:before,
+  .team-area .team-content-wrap .team-item .team__title:after {
+    width: 240px;
+    margin: auto;
+  }
+}
   /* Medium Devices, Desktops */
   @media only screen and (min-width : 992px) {
     .Todos {
@@ -714,6 +1178,14 @@ a:visited{
     Footer {
       width: 100vw;
     }
+    .team-area .team-content-wrap .team-item .team__img img {
+      width: 90% !important;
+    }
+    .team-area .team-content-wrap .team-item .team__title:before,
+    .team-area .team-content-wrap .team-item .team__title:after {
+    width: 90%;
+    margin: auto;
+  }
   }
 
   /* Large Devices, Wide Screens */
