@@ -27,7 +27,7 @@ const test = async () => {
     try {
         var provider = new firebase.auth.GoogleAuthProvider()
         const res = await firebase.auth().signInWithPopup(provider);
-        const user = res.user;
+        // const user = res.user;
 		// userHasAuthenticated(true);
     	// history.push("/");
         // alert(user.displayName)

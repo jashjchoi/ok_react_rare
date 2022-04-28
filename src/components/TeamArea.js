@@ -1,9 +1,5 @@
 import React from "react";
 import sectionIcon from "../components/assets/images/section-icon.png";
-// import team1 from "../components/assets/images/teamimg1.jpg";
-// import team2 from "../components/assets/images/team2.jpg";
-
-
 
 const TeamArea = () => {
   return (
@@ -23,28 +19,19 @@ const TeamArea = () => {
         <div className="row team-content-wrap">
           <div className="col-lg-3 col-md-4 col-sm-4">
             <div className="team-item team-item1">
-              <div className="team__img">
-                {/* <img src={team1} alt="team post" /> */}
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <div className="team__title">
                 <h2 className="team__title-title">
-                  <a className="p-0">Jade Day</a>
+                  <a href='https://www.facebook.com/OKrare' className="p-0">Jade Day</a>
                 </h2>
                 <span className="team__title-meta">Founder</span>
+                <div className="team-icons mt-1">
+                  <a href='https://www.facebook.com/OKrare' className='me-4 mx-2 text-reset'>
+                    <i className='fab fa-facebook-f'></i>
+                  </a>
+                  <a href='https://www.linkedin.com/in/jade-day-14516292' className='me-3 mx-3 text-reset'>
+                    <i className='fab fa-linkedin-in'></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -73,37 +60,20 @@ const TeamArea = () => {
           <div className="col-lg-3 col-md-4 col-sm-4">
             <div className="team-item team-item2">
               <div className="team__img">
-                {/* <img src={team2} alt="team post" /> */}
-                <div className="team__img-links">
-                  <ul>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-instagram"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
               </div>
               <div className="team__title">
                 <h2 className="team__title-title">
-                  <a className="p-0">Sky Collins</a>
+                  <a href="https://www.facebook.com/OKrare" className="p-0">Sky Collins</a>
                 </h2>
                 <span className="team__title-meta">Co-Founder</span>
+                <div className="team-icons mt-1">
+                  <a href='https://www.facebook.com/OKrare' className='me-4 mx-2 text-reset'>
+                    <i className='fab fa-facebook-f'></i>
+                  </a>
+                  <a href='https://www.linkedin.com/in/jade-day-14516292' className='me-3 mx-3 text-reset'>
+                    <i className='fab fa-linkedin-in'></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

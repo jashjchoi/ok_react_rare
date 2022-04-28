@@ -61,20 +61,20 @@ h1,h2,h3,h4,h5,h6,label,span {
     animation: heartbeat 0.7s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
   }
   .login-container .heart-icon-1 {
-    top: 12%;
-    left: 16%;
+    top: 25%;
+    left: 30%;
   }
   .login-container .heart-icon-2 {
-    top: 18%;
+    top: 29%;
     left: 0;
   }
   .login-container .heart-icon-3 {
     top: 33%;
-    left: 15%;
+    left: 40%;
   }
   .login-container .heart-icon-4 {
-    top: 37%;
-    left: 24%;
+    top: 42%;
+    left: 30%;
   }
   .login-container .heart-icon-5 {
     top: 56%;
@@ -86,11 +86,11 @@ h1,h2,h3,h4,h5,h6,label,span {
     right: 7%;
   }
   .login-container .heart-icon-8 {
-    top: 12%;
+    top: 25%;
     right: 9%;
   }
   .login-container .heart-icon-9 {
-    top: 24%;
+    top: 40%;
     right: 20%;
   }
   .login-container .heart-icon-10 {
