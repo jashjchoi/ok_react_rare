@@ -2,17 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800&display=swap');
+
 
 /* Default Margin & Padding */
 
-/* *, ::after, ::before {
+*, ::after, ::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-} */
+}
 
-/* --------------- APP ---------------------*/
+#root {
+  width: 100vw;
+  background-color: #edeffa;
+}
+
+/*===================================
+    APP
+=====================================*/
 .App {
   display: flex;
   width: 100vw;
@@ -20,7 +29,6 @@
   overflow: hidden;
 }
 
-/* Sidebar */
 .menu {
   min-width: 480px;
   min-width: 210px;
@@ -30,55 +38,74 @@
   background-color: #edeffa;
 }
 
-/* --------------- Main Section ---------------------*/
+/*===================================
+    MAIN
+=====================================*/
 .Main {
-  width: 100%;
-  min-height: 60vh;
+  min-height: 50vh;
   background-image: url("../images/grey_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
+
+}
+.menu-container {
+  justify-content: center;
+  text-align: center;
 }
 
-/* User */
-/* .User {
-  align-items: center;
-  justify-content: space-around;
-  padding: 1rem;
-  min-height: 125px;
-  margin:0;
-  border-bottom: 1px solid #277faf63;
-} */
-/* .navbar-logo {
-  align-items: center;
-  justify-content: space-around;
-  display: border-box;
-} */
+.menu-container .section__title{
+  color: #44ACB5;
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
-.navbar-logo img {
-  width: 50px;
-  margin: auto;
+/*===================================
+    ABOUT
+=====================================*/
+
+.about-area {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.about-area .about-large-img {
+  margin-bottom: 60px;
+}
+.about-area .about-large-img img,
+.about-area .about-semi-img img {
+  width: 100%;
+}
+.about-area .about-heading {
+  font-size: 1.1rem;
+}
+.about-area .about-heading .section-heading .section__desc {
+  line-height: 25px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*===================================
+    NAVBAR
+=====================================*/
+.navbarbrand {
+  color: #44ACB5;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+}
+
+.logo {
+  margin: auto 1rem;
   display: inline-flex;
   justify-content: center;
   border-radius: 50%;
   border: 2px solid #44ACB5;
-  
 }
-
-/* .info p {
-  display: inline-flex;
-  font-size: 0.9rem;
-  font-weight: normal;
-  text-align: right;
-} */
-
-/* .info a {
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-top: 0.2rem;
-  display: flex;
-  justify-content: flex-end;
-  color: #E87F3C;
-} */
 
 h3{
   color: #44ACB5;
@@ -91,13 +118,22 @@ h3{
 }
 
 .cursive {
-  margin: 5px;
+
   font-size: 1.4rem;
+  font-weight: 600;
   display: inline-flex;
   font-family: 'Handlee', cursive;
   color: #F68712 !important; 
 }
-/* --------------- Modal (pop up windows)--------------------*/
+#responsive-navbar-nav {
+  margin-bottom: 0.6rem;
+  z-index: 5 !important;
+}
+
+
+/*===================================
+    Modal POPUP
+=====================================*/
 .Modal {
   position: fixed;
   top: 0;
@@ -112,12 +148,15 @@ h3{
   position: absolute;
   top: 25%;
   left: 50%;
+  max-width: 500px;
   transform: translate(-50%, -25%);
   z-index: 5 !important;
 }
 
 
-/* --------------- Tags Section ---------------------*/
+/*===================================
+    TAGS (PROJECTS)
+=====================================*/
 .Projects {
   width: 50%;
   padding: 1rem;
@@ -134,9 +173,13 @@ h3{
   flex: 1;
 }
 .Projects .header .title p {
-  margin-left: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #44ACB5;
+  letter-spacing: 0.8px;
+  font-family: 'Noto Sans', sans-serif;
 }
 .Projects .header .btns {
   display: flex;
@@ -161,7 +204,9 @@ h3{
 .Projects .items {
   padding: 0.5rem;
 }
-/* --------------- Tag css (icons and effects) ---------------------*/
+/*===================================
+    LIST OF TAGS
+=====================================*/
 .Project {
   position: relative;
   display: flex;
@@ -213,19 +258,22 @@ h3{
   background: #EF8282;
 }
 
-/* --------------- Add New Tags & Tag form ---------------------*/
+/*===================================
+    ADD A NEW TAG
+=====================================*/
 .AddNewProject .add-button span {
   margin-right: 5px;
 }
 .ProjectForm {
-  background-color: #edeffa;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 4px;
   position: relative;
   padding-bottom: 40px;
-  width: 360px;
+  max-width: 480px;
 }
 .ProjectForm input {
+  background-color: #edeffa;
   width: 100%;
   height: 40px;
   margin: 15px 0;
@@ -261,12 +309,10 @@ h3{
   filter: brightness(1.1);
 }
 
-/* --------------- Add new Todo ---------------------*/
+/*===================================
+    ADD NEW TODO TASKS
+=====================================*/
 
-/* AddNewTodo */
-.AddNewTodo {
-  border-bottom: 1px solid #277faf63;
-}
 .AddNewTodo .todobtn {
   display: flex;
   padding: 1rem;
@@ -275,8 +321,9 @@ h3{
   justify-content: center;
 }
 .AddNewTodo .todobtn button {
-  width: 30%;
   height: 70%;
+  margin: 1rem;
+  padding: 0 2rem;
   border: none;
   border-radius: 3px;
   font-size: 1rem;
@@ -284,11 +331,10 @@ h3{
   color: white;
   font-weight: bold;
   cursor: pointer;
-  margin: auto;
   justify-content: center;
 
 }
-.AddNewTodo .btn button:hover {
+.AddNewTodo .todobtn button:hover {
   filter: brightness(1.1);
   transition: all 300ms ease;
 }
@@ -324,7 +370,8 @@ h3{
   margin-bottom: 5px;
 }
 .AddNewTodo form .pick-day {
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin: 0 auto;
+  padding: 0rem 1.5rem 0 1.5rem;
 }
 .AddNewTodo form .pick-time {
   padding: 1.5rem;
@@ -335,7 +382,7 @@ h3{
 .AddNewTodo form .pick-project .projects {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 1rem 0 1rem;
+  padding: 0rem 1rem 0 1rem;
 }
 .AddNewTodo form .pick-project .projects .project {
   border: 1px solid #44ACB5;
@@ -372,7 +419,7 @@ h3{
 }
 .TodoForm {
   padding: 1rem 2rem calc(3rem + 50px) 1rem;
-  width: 100%;
+  max-width: 480px;
   background: #edeffa;
   border-radius: 4px;
 }
@@ -397,7 +444,6 @@ h3{
 .TodoForm .remind {
   display: flex;
   align-items: center;
-  padding: 0.5rem;
 }
 .TodoForm p {
   margin-left: 10px;
@@ -406,17 +452,30 @@ h3{
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  
 }
 .TodoForm .pick-day {
-  padding: 1.5rem 1.5rem 0 1.5rem;
+  padding: auto;
+  margin: 0 auto !important;
+}
+
+.TodoForm .pick-day p{
+  margin-top:1rem;
+
 }
 .TodoForm .pick-time {
   padding: 1.5rem;
 }
+
+.TodoForm .pick-time p{
+  margin-top:1rem;
+}
 .TodoForm .pick-project {
   padding: 0.5rem;
 }
+.TodoForm .pick-project p {
+  margin-top:1rem;
+}
+
 .TodoForm .pick-project .projects {
   display: flex;
   flex-wrap: wrap;
@@ -439,15 +498,11 @@ h3{
   right: 5px;
   cursor: pointer;
 }
-.TodoForm .confirm {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
+
 .TodoForm .confirm button {
-  width: 100%;
   height: 40px;
+  margin-left: 15px;
+  width: 480px !important;
   background: #44ACB5;
   color: white;
   font-size: 1rem;
@@ -456,8 +511,9 @@ h3{
   cursor: pointer;
 }
 
-
-/* --------------- Todo Attr. ---------------------*/
+/*===================================
+    TODO TASK WINDOW
+=====================================*/
 .Todo {
   padding: 1rem;
 }
@@ -475,8 +531,12 @@ h3{
 .Todo .todo-container .text {
   position: relative;
   flex: 1;
-  margin: 0 10px;
+  margin: auto 10px;
   cursor: pointer;
+}
+.Todo .todo-container .text p {
+  margin: 0;
+  font-size: 1rem;
 }
 .Todo .todo-container .text span {
   font-size: 0.8rem;
@@ -498,7 +558,9 @@ h3{
 }
 
 
-/* --------------- List of Todos ---------------------*/
+/*===================================
+    LIST OF TODOS
+=====================================*/
 .Todos {
   vertical-align: top;
   width: 400px;
@@ -510,6 +572,7 @@ h3{
   padding: 0 0.5rem 0.5rem 0.5rem;
   display: inline-block;
   align-content: top;
+  transition: all .3s;
 }
 .Todos .selected-project {
   margin: 1rem;
@@ -542,7 +605,9 @@ h3{
   margin-left: 10px;
 }
 
-/* --------------- Edit Todo Window ---------------------*/
+/*===================================
+    EDIT TODO WINDOW
+=====================================*/
 
 .EditTodo {
   vertical-align: top;
@@ -566,7 +631,9 @@ h3{
   color: #2780AF;
 }
 
-/* --------------- My Schedule section ---------------------*/
+/*===================================
+    MY SCHEDULE
+=====================================*/
 .Calendar {
   padding: 1rem;
   width: 50%;
@@ -581,11 +648,17 @@ h3{
   display: flex;
   align-items: center;
   flex: 1;
+
 }
 .Calendar .header .title p {
-  margin-left: 5px;
+  margin-left: 1rem;
+  margin-top: 1rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
+  color: #44ACB5;
+  letter-spacing: 0.8px;
+  font-family: 'Noto Sans', sans-serif;
+
 }
 .Calendar .header .btns span {
   border-radius: 50%;
@@ -610,18 +683,598 @@ h3{
   cursor: pointer;
 }
 
+.About {
+    vertical-align: top;
+    height: 70%;
+    background-color: #EDEFFA;
+    margin: 2.5rem;
+    border-radius: 4px;
+    opacity: 0.9;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    display: inline-block;
+    align-content: top;
+    font-weight: normal;
+  }
 
-.footer{
+/*===================================
+    FOOTER
+=====================================*/
+
+Footer{
   background-color: #242222;
-  width: 100%;
-  height: auto;
-  padding: 3rem;
 }
-.footer-nav h2{
-  display: inline-flex;
-  margin: auto;
-  align-items: right;
+.icons {
+  font-size: 1.2rem;
+}
+Footer i {
+  text-decoration: none;
+  font-weight: 200;
+
+}
+Footer i:hover {
+  color: #44ACB5;
+  transition: all 300ms ease;
+  text-decoration: none;
+
 }
 a:visited{
   text-decoration: none;
 }
+.usinfo {
+  text-decoration: none;
+  color: #6C757D;
+}
+.usinfo:hover {
+  text-decoration: none;
+  color: #44ACB5;
+  transition: all 300ms ease;
+}
+/*===================================
+    ABOUT PAGE - TEAM
+=====================================*/
+.team-area {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.team-area .team-content-wrap {
+  margin-top: 50px;
+}
+.team-area .team-content-wrap .team-item {
+  margin-bottom: 30px;
+}
+
+.team-area .team-content-wrap .team-item:hover .team__img .team__img-links {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.team-area .team-content-wrap .team-item .team__title {
+  position: relative;
+  z-index: 1;
+  margin: 1rem auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.team-area .team-content-wrap .team-item .team__title:before,
+.team-area .team-content-wrap .team-item .team__title:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 40px;
+  z-index: -1;
+  background-color: #44ACB5;
+}
+.team-area .team-content-wrap .team-item .team__title:after {
+  right: 21px;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-10deg,0deg);
+  -moz-transform: skew(-10deg,0deg);
+  -ms-transform: skew(-10deg,0deg);
+  -o-transform: skew(-10deg,0deg);
+  transform: skew(-10deg,0deg);
+}
+
+.team-area .team-content-wrap .team-item .team__title .team__title-title {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+.team-area .team-content-wrap .team-item .team__title .team__title-title a {
+  color: #fff;
+}
+.team-area .team-content-wrap .team-item .team__title .team__title-meta {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.team-area .team-content-wrap .team-item2 .team__title:before,
+.team-area .team-content-wrap .team-item2 .team__title:after {
+  background-color: #F68712;
+}
+
+.team-area2 .team-content-wrap {
+  margin-top: 0;
+}
+
+.team-area .section__desc {
+  font-family: 'Roboto', sans-serif;
+  line-height: 25px;
+
+}
+
+.team-area .section__meta {
+  color: #F68712;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.team-area a {
+  font-family: 'Playfair Display', serif;
+
+}
+.team-area span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.team-area .team-content-wrap .team-item .team-icons i,
+.team-area .team-content-wrap .team-item2 .team-icons i {
+  margin-top:0.8rem;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.team-area .team-content-wrap .team-item .team-icons i:hover{
+  opacity: 1;
+}
+.team-area .team-content-wrap .team-item2 .team-icons i:hover {
+  opacity: 1;
+}
+/*===================================
+    ABOUT PAGE
+=====================================*/
+.service-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+/*=== heart-icon ===*/
+.service-area .heart-icon {
+  position: absolute;
+  animation: heartbeat 0.7s cubic-bezier(0.245, 0.325, 0.51, 1.305) infinite alternate;
+}
+.service-area .heart-icon-1 {
+  top: 0;
+  left: 16%;
+}
+.service-area .heart-icon-2 {
+  top: 6%;
+  left: 0;
+}
+.service-area .heart-icon-3 {
+  top: 33%;
+  left: 9%;
+}
+.service-area .heart-icon-4 {
+  top: 37%;
+  left: 20%;
+}
+.service-area .heart-icon-5 {
+  top: 56%;
+  left: 10%;
+}
+.service-area .heart-icon-6 {
+  bottom: 17%;
+  left: 9%;
+}
+.service-area .heart-icon-7 {
+  top: -9%;
+  right: 7%;
+}
+.service-area .heart-icon-8 {
+  top: 14%;
+  right: 9%;
+}
+.service-area .heart-icon-9 {
+  top: 24%;
+  right: 20%;
+}
+.service-area .heart-icon-10 {
+  top: 50%;
+  right: 14%;
+}
+.service-area .heart-icon-11 {
+  bottom: 25%;
+  right: 3%;
+}
+
+.service-area .service-wrap {
+  margin-top: 52px;
+  margin-bottom: 50px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon {
+  display: inline-block;
+  padding: 12px 15px;
+  position: relative;
+  margin-bottom: 27px;
+  z-index: 1;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon i {
+  font-size: 65px;
+  line-height: 60px;
+  color: #424242;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-icon:before,
+.service-area .service-wrap .service-item .service-item-inner .service-icon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #e5f5f6;
+}
+
+.service-area .service-wrap .service-item .service-item-inner .service-content {
+  padding-right: 35px;
+  padding-left: 35px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-content .service__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 23px;
+}
+.service-area .service-wrap .service-item .service-item-inner .service-content .service__desc {
+  line-height: 29px;
+}
+.service-area .button-shared .theme-btn,
+.service-area .button-shared .theme-btn:after {
+  background-color: #F68712;
+}
+.service-area .button-shared .theme-btn:hover,
+.service-area .button-shared .theme-btn:hover:after {
+  background-color: #f1ae44;
+}
+
+.button-shared .servicebtn{
+  margin: 2rem;
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #44ACB5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.service-area .section__title {
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.service-area p {
+  color: #F68712;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.button-shared .servicebtn:hover {
+  filter: brightness(1.1);
+  transition: all 300ms ease;
+}
+
+/*===================================
+    CONTACT US
+=====================================*/
+
+.contact-area {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  margin: auto 0.3rem;
+}
+.contact-area .section__desc {
+  line-height: 25px;
+  margin-top: 43px;
+  padding-right: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.contact-area .section__list {
+  margin: 2rem 0rem;
+}
+.contact-area .section__list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.contact-area .section__list li a {
+  font-size: 15px;
+  background-color: #44ACB5;
+  color: #fff;
+  padding: 0 20px 0 20px;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+}
+.contact-area .section__list li a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #44ACB5;
+  border-radius: 50%;
+
+}
+.contact-area .section__list li:nth-child(2) a,
+.contact-area .section__list li:nth-child(2) a:after {
+  background-color: #F68712;
+}
+.contact-area .section__list li:nth-child(3) a,
+.contact-area .section__list li:nth-child(3) a:after {
+  background-color: #f1ae44;
+}
+
+
+.contact-area .contact-detail-action {
+  margin-top: 120px;
+}
+.contact-area .contact-detail-action .contact-item {
+  background-color: #44ACB5;
+  padding: 52px 30px 50px 60px;
+  height: 270px;
+  position: relative;
+  z-index: 1;
+  margin-right: 57px;
+}
+.contact-area .contact-detail-action .contact-item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #44ACB5;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: skew(-12deg,0deg);
+  -moz-transform: skew(-12deg,0deg);
+  -ms-transform: skew(-12deg,0deg);
+  -o-transform: skew(-12deg,0deg);
+  transform: skew(-12deg,0deg);
+}
+.contact-area .contact-detail-action .contact-item2,
+.contact-area .contact-detail-action .contact-item2:after {
+  background-color: #F68712;
+}
+.contact-area .contact-detail-action .contact-item3,
+.contact-area .contact-detail-action .contact-item3:after {
+  background-color: #f1ae44;
+}
+.contact-area .contact-detail-action .contact-item .contact__title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+.contact-area .contact-detail-action .contact-item .contact__desc {
+  color: #fff;
+  line-height: 30px;
+  font-weight: 500;
+}
+.contact-area .form-shared form .textarea {
+  height: 170px;
+}
+
+.donate-area form{
+  margin: 2rem 0;
+}
+
+.newsletter-area .section-heading .section__meta {
+  color: #F68712;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+.newsletter-area .newsletter-form {
+  margin-top: 51px;
+}
+.newsletter-area .newsletter-form .col-lg-9 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.newsletter-area .newsletter-form .form-shared form .form-group {
+  margin-bottom: 0;
+}
+.newsletter-area .newsletter-form .form-shared form .form-group .form-control {
+  color: #343434;
+  background-color: #ffffff;
+}
+.newsletter-area .newsletter-form .form-shared form .submit__btn,
+.newsletter-area .newsletter-form .form-shared form .submit__btn:after {
+  margin-top: 0;
+  background-color: #F68712;
+}
+.newsletter-area .newsletter-form .form-shared form .submit__btn:hover,
+.newsletter-area .newsletter-form .form-shared form .submit__btn:hover:after {
+  background-color: #f1ae44;
+}
+
+.form-shared form .form-control,
+.form-shared form .textarea,
+.form-shared form .select-option {
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #f2f0ec;
+    color: #818181;
+    padding: 19px 30px;
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+}
+
+.loginbtn {
+  margin: auto;
+  padding: auto;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: #44ACB5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: right;
+  align-content: right;
+}
+
+.logoutbtn {
+  margin: auto;
+  padding: auto;
+  border-radius: 3px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  justify-content: right;
+  align-content: right;
+}
+
+.logoutbtn:hover {
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+
+
+/*===================================
+    RESPONSIVE DESIGN
+=====================================*/
+  /* Mobile */
+@media (max-width:480px){
+  .Todos {
+    width: 80vw;
+    justify-content: center;
+  }
+  .Main {
+    width: 100vw;
+  }
+  .TodoForm {
+    max-width: 320px;
+    margin: auto;
+    align-content: center;
+  }
+  .TodoForm .confirm button {
+    max-width: 320px;
+  }
+  .Modal .container {
+    max-width: 340px;
+    margin: auto;
+    align-content: center;
+
+  }
+  Footer {
+    width: 100vw;
+  }
+  .footer-info {
+    text-align: center !important;
+    justify-content: center !important;
+    margin: auto;
+  }
+  .team-area .team-content-wrap .team-item .team__title:before,
+  .team-area .team-content-wrap .team-item .team__title:after {
+    width: 75%;
+    margin: auto;
+  }
+ .navbar-custom {
+    z-index: 5 !important;
+  }
+}
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    .Todos {
+      justify-content: center;
+    }
+    .menu {
+      width: 75vw;
+    }
+    .Main {
+      width: 100vw;
+    }
+    Footer {
+      width: 100vw;
+    }
+    .team-area .team-content-wrap .team-item .team__title:before,
+    .team-area .team-content-wrap .team-item .team__title:after {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (min-width : 1024px) {
+    .navbar-custom {
+      z-index: 7 !important;
+    }
+    #responsive-navbar-nav {
+      z-index: 7 !important;
+    }
+    .signbtn {
+      left: 85%;
+      position: absolute;
+    }
+
+  } 
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+
+    .menu {
+      width: 50vw;
+    }
+    .Main {
+      width: 80vw;
+    }
+    Footer {
+      width: 80vw;
+      margin: auto;
+    }
+    .signbtn {
+      left: 82%;
+      position: absolute;
+    }
+  }

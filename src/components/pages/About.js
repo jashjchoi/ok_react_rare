@@ -1,6 +1,15 @@
 import React from 'react';
 import '../../App.css';
+import AboutInfo from '../AboutInfo';
+import TeamArea from '../TeamArea'
+import ServiceArea from '../ServiceArea'
 
 export default function About() {
-  return <h1 className='about'>About</h1>;
+  return (
+    <>
+    <AboutInfo />
+    <TeamArea />
+    <ServiceArea />
+    </>
+  );
 }

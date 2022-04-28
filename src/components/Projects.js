@@ -6,7 +6,7 @@ import { TodoContext } from '../context'
 
 
 function Projects(){
-    const [showMenu, setShowMenu] = useState(true);
+    const [showMenu] = useState(true);
     const [edit, setEdit] = useState(false)
     const pencilColor = edit ? "#2780AF" : "#000000"
     const { projects } = useContext(TodoContext)

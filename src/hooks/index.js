@@ -40,7 +40,6 @@ export function useProjects(todos){
                 return {
                     id : doc.id,
                     name : projectName,
-                    // numOfTodos : calculateNumOfTodos(projectName, todos)
                 }
             })
             setProjects(data)
