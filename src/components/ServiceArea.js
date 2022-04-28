@@ -14,8 +14,6 @@ import sectionIcon from "../components/assets/images/section-icon.png";
 import { Button } from 'react-bootstrap'
 
 
-
-
 const ServiceArea = () => {
   return (
     <section className="service-area text-center">

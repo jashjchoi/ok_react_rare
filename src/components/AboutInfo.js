@@ -1,5 +1,4 @@
 import React from 'react'
-// import Main from './Main'
 import aboutImage from "../components/assets/images/logook.png";
 import sectionIcon from "../components/assets/images/section-icon.png";
 

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react'
-import { ArrowClockwise, CheckCircleFill, Circle, Trash, Pencil } from 'react-bootstrap-icons'
+import { CheckCircleFill, Circle, Trash, Pencil } from 'react-bootstrap-icons'
 import firebase from '../firebase'
 import { TodoContext } from '../context';
 
