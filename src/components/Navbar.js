@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Navbar, Nav, Container } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom';
-import './assets/css/Navbar.css';
 import logo from './assets/images/oklogo.png'
 import { auth } from '../firebase';
 import {useAuthState} from 'react-firebase-hooks/auth';

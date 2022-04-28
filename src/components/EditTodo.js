@@ -12,7 +12,7 @@ function EditTodo(){
     const [day, setDay] = useState(new Date())
     const [time, setTime] = useState(new Date())
     const { selectedTodo, projects } = useContext(TodoContext);
-
+    
     useEffect(() => {
         if(selectedTodo){
             setText(selectedTodo.text)
@@ -35,20 +35,24 @@ function EditTodo(){
                     projectName : todoProject
                 })
         }
-
     }, [text, day, time, todoProject])
     function handleSubmit(e){
 
     }
+    // const [setShow] = useState(false);
+    // const handleClose = () => setShow(false);
+
+
+    
     return (
         <>
             {selectedTodo &&
             <div className='EditTodo'>
+                {/* <div className="cancel" onClick={handleClose}>
+                    <X size='30' />
+                </div> */}
                 <div className="header">Edit My Schedule
                 </div>
-                {/* <div className="cancel" onClick={() => EditTodo(true)}>
-                                <X size='30' />
-                </div> */}
                 <div className="container">
                     <TodoForm
                         handleSubmit={handleSubmit}
