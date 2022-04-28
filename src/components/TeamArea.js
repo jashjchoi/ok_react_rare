@@ -16,6 +16,7 @@ const TeamArea = () => {
                 <img src={sectionIcon} alt="section-icon" />
               </div>
               <h2 className="section__title">Our Volunteers</h2>
+              <p className="section__meta">ABOUT US</p>
             </div>
           </div>
         </div>
@@ -28,17 +29,7 @@ const TeamArea = () => {
                   <ul>
                     <li>
                       <a href="#none">
-                        <i className="fa fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
                         <i className="fa fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#none">
-                        <i className="fa fa-pinterest"></i>
                       </a>
                     </li>
                     <li>

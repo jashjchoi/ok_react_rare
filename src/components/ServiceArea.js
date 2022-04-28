@@ -41,7 +41,7 @@ const ServiceArea = () => {
               <h2 className="section__title">
                 We Are Stronger Together
               </h2>
-              <p className="section__meta">Join us Now</p>
+              <p className="section__meta">JOIN US NOW</p>
             </div>
           </div>
         </div>

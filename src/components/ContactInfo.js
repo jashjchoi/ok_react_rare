@@ -91,7 +91,7 @@ const Contact = () => {
                         <img src={sectionIcon} alt="section-icon" />
                     </div>
                     <h2 className="section__title text__white">Newsletter</h2>
-                    <p className="section__meta">Stay Updated</p>
+                    <p className="section__meta">STAY UPDATED</p>
                     </div>
                     <div className="newsletter-form">
                     <div className="form-shared">

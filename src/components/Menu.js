@@ -7,10 +7,14 @@ function Menu({ children }){
 
     return (
         <>
-        <div className="container">
-            <h3 className="section__title"> Welcome!
-                <span className="ml-2"> { auth.currentUser.displayName }</span> 
-            </h3>
+        <div className="menu-container"> 
+    
+            <img src={sectionIcon} alt="section-icon" className="mx-3"/>
+            <h3 className="section__title">
+                Welcome!  { auth.currentUser.displayName }</h3> 
+            
+            <img src={sectionIcon} alt="section-icon" className="mx-3"/>
+
         </div>
         <div className='menu'>
             {children}

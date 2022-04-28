@@ -36,8 +36,8 @@ const test = async () => {
 }
 
 
-const signInWithGoogle = () => 
-	auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+// const signInWithGoogle = () => 
+// 	auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
 
 
 // const history = useHistory();
@@ -63,8 +63,6 @@ export default function Login() {
 					<center>
 						<button className="btn btn-dark btn-lg btn-block" onClick={ test}
 					>Sign In with Google</button>
-                    		{/* <button className="btn btn-dark btn-lg btn-block"
-					>Sign In with Google</button> */}
 					</center>
 			</div>
 		</div>

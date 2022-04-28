@@ -66,7 +66,7 @@ export default function Footer() {
           <a href='https://www.linkedin.com/in/jade-day-14516292' className='me-4 mx-3 text-reset'>
             <i className='fab fa-linkedin-in'></i>
           </a>
-          <a href='' className='me-4 mx-3 text-reset'>
+          <a href='/' className='me-4 mx-3 text-reset'>
             <i className='fab fa-google'></i>
           </a>
 
