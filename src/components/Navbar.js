@@ -3,6 +3,13 @@ import { Button, Navbar, Nav, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import './assets/css/Navbar.css';
 import logo from './assets/images/oklogo.png'
+import { auth } from '../firebase';
+
+
+const logout = () => {
+	auth.signOut();
+}
+
 
 function Navbarcontainer() {
   // const [click, setClick] = useState(false);
@@ -67,6 +74,7 @@ function Navbarcontainer() {
                 <Nav.Link href="/about"> About </Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/login">Login</Nav.Link>
+                <Button onClick={logout} variant="secondary" >Logout</Button>
 
             </Nav>
           </Navbar.Collapse>
