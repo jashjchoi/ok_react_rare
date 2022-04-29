@@ -58,7 +58,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -128,20 +127,11 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Jasmine Choi - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-Ashley Price - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Jasmine Choi - [linkedin-url](https://www.linkedin.com/in/jasmine-hj-choi/) - jashjchoi@gmail.com
+Ashley Price - [linkedin-url](https://www.linkedin.com/in/ashleybordenprice/) - email@email_client.com
 
 Project Link: [https://github.com/jashjchoi/ok_react_rare](https://github.com/jashjchoi/ok_react_rare)
 
