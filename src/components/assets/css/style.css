@@ -59,8 +59,9 @@
   font-size: 0.9rem;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
+  margin: 2rem 0;
 }
 
 /*===================================
@@ -463,14 +464,14 @@ h3{
 
 }
 .TodoForm .pick-time {
-  padding: 1.5rem;
+  margin-top:1rem;
 }
 
 .TodoForm .pick-time p{
   margin-top:1rem;
 }
 .TodoForm .pick-project {
-  padding: 0.5rem;
+  margin-top:1rem;
 }
 .TodoForm .pick-project p {
   margin-top:1rem;
@@ -479,7 +480,7 @@ h3{
 .TodoForm .pick-project .projects {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 1rem 0 1rem;
+  padding: auto;
 }
 .TodoForm .pick-project .projects .project {
   border: 1px solid #44ACB5;
@@ -1189,6 +1190,10 @@ a:visited{
   /* Mobile */
 @media (max-width:480px){
   .Todos {
+    width: 80vw;
+    justify-content: center;
+  }
+  .EditTodo {
     width: 80vw;
     justify-content: center;
   }
