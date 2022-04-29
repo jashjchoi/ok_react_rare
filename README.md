@@ -93,10 +93,13 @@ This is an example of how you may give instructions on setting up your project l
 To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install
+If you are unable to use a Node version manager, you can use a Node installer to install both Node.js and npm on your system.
+[Node.js installer](https://nodejs.org/en/download/)
+
+To see if you already have Node.js and npm installed and check the installed version, run the following commands:
+```
+node -v
+npm -v
 ```
 
 ### Installation
@@ -109,10 +112,6 @@ git clone https://github.com/jashjchoi/ok_react_rare
 ```sh
 npm install
 ```
-
-
-
-
 
 
 <!-- USAGE EXAMPLES -->
